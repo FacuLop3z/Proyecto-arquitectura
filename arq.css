@@ -1,0 +1,276 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 1fr 1fr;
+    min-height: 100vh;
+}
+
+header {
+    grid-column: span 3;
+    background-color: #333;
+    color: #fff;
+    padding: 8px;
+    text-align: center;
+    justify-content: space-between;
+    padding-inline: 100px;
+    align-items: center;
+    
+}
+.porfolio{
+    color: white;
+    font-size: 30px;
+    
+}
+
+main {
+    grid-column: span 2;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    padding: 20px;
+   background-image: url(portafolio-programador.webp);
+    border-radius: 8px;
+    flex: 1;
+}
+
+
+div {
+    display: flex;
+    flex:1 ;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    width: 100%;
+   background-image: url(circuitohd.jpg);
+}
+.contenedordiv {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+
+
+
+.divcontenido {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    height: 250px;
+    
+ 
+}
+.divcontenidotext{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+    border-radius: 8px;
+    height: 250px;
+
+}
+.divcontenidotext:hover .cajatexto{
+    transform: translate(-1.5px, 1.5px);
+}
+.divcontenido:hover .img1,
+.divcontenido:hover .img2,
+.divcontenido:hover .img3,
+.divcontenido:hover .img4,
+.divcontenido:hover .img5{
+    transform: translate(-1.5px, 1.5px);
+}
+.img1 , .img2 , .img3 , .img4 , .img5 {
+    transition: ease-in-out .2s;
+}
+.cajatexto{
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(50px);
+    background-color: transparent;
+    transition: ease-in-out .2s;
+    color: white;
+    padding: 18px;
+}
+aside {
+    grid-column: 3;
+    grid-row: 2 / 3;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    text-align: center;
+}
+
+input {
+    margin: 10px 0;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+footer {
+    display: flex;
+ 
+    grid-column: span 3;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 8px;
+    height: 150px;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 100px;
+    
+   
+}
+a , a:visited, a:focus {
+  text-decoration: none;
+  color: white;
+  transition: ease-in-out .2s;
+}
+.insta{
+    background-image: url(instagram.png);
+    width: 35px;
+    height: 35px;
+    background-size: cover;
+}
+.face{
+    background-image: url(variante-de-logotipo-bosquejado-de-facebook.png);
+    width: 35px;
+    height: 35px;
+    background-size: cover;
+}
+.email{
+    background-image: url(logotipo-de-gmail.png);
+    width: 35px;
+    height: 35px;
+    background-size: cover;
+}
+.wsp{
+    background-image: url(social.png);
+    width: 35px;
+    height: 35px;
+    background-size: cover;
+}
+.insta:hover,
+.face:hover,
+.email:hover,
+.wsp:hover{
+
+    transform: translate(-2px, 2px);
+   
+}
+
+.boton {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: ease-in-out .2s;
+}
+.boton:hover{
+    background-color:#316933 ;
+    transform: translate(-1.5px, 1.5px);
+
+}
+
+.img1{
+    background-image: url(electric.jpg);
+    background-size: cover;
+    background-position: center;
+   
+    
+}
+.img2{
+    background-image: url(painter-man-painting-house-wall-600nw-2093621611.webp);
+    background-size: cover;
+    background-position: center;
+   
+    
+}
+.img3{
+    background-image: url(isometric-agricultural-work-gardener-on-260nw-2159622531.webp);
+    background-size: cover;
+    background-position: center;
+   
+    
+}
+.img4{
+    background-image: url(mekanic-copy-0.jpg);
+    background-size: cover;
+    background-position: center;
+   
+    
+}
+.img5{
+    background-image: url(hombre-traje-neon-sienta-silla-letrero-neon-que-dice-palabra_188544-27011.avif);
+    background-size: cover;
+    background-position: center;
+   
+    
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+#boton1 p {
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+}
+
+#boton2 p {
+    color: white;
+    font-size: 25px;
+    padding: 10px;
+}
+
+@media screen and (max-width: 750px) {
+    .contenedordiv{
+        display: flex;
+        flex-direction: column;
+        
+        
+    }
+    .divcontenido{
+        min-height: 250px;
+    }
+    .divcontenidotext{
+        min-height: 250px;
+    }
+}
